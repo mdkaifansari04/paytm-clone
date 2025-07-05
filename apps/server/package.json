@@ -12,9 +12,11 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@repo/prisma": "workspace:*",
     "@types/express": "^5.0.3",
     "dotenv": "^17.0.1",
     "express": "^5.1.0",
+    "joi": "^17.13.3",
     "prisma": "^6.11.1",
     "typescript": "^5.8.3"
   }

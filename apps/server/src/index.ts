@@ -1,5 +1,6 @@
 import express, { Response, Request } from "express";
 import { config } from "dotenv";
+import errorHandler from "./helper/error";
 config();
 
 const app = express();
@@ -11,6 +12,8 @@ app.get("/health", (req: Request, res: Response) => {
     message: "STATUS: OK",
   });
 });
+
+app.use(errorHandler);
 
 app.listen(PORT, () => {
   console.log(`Port is running on : http://localhost:${PORT}`);
