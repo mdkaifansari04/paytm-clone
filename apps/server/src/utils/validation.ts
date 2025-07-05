@@ -13,6 +13,6 @@ export const validateSchema = ({
   next: NextFunction;
 }) => {
   const { error, value } = schema.validate(req.body);
-  if (error) next(new ErrorResponse("Validation error", 500));
+  if (error) next(new ErrorResponse(error.message, 400));
   req.value = value;
 };

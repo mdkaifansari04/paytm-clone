@@ -2,7 +2,7 @@
   "name": "@repo/prisma",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/prisma/index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "build": "tsc -b"
   },
